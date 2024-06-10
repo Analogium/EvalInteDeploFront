@@ -57,7 +57,7 @@ jobs:
         run: unzip release.zip
 
       - name: Set environment variables for Dev
-        run: echo "VITE_BASE_URL=${{ secrets.VITE_BASE_URL_DEV }}" >> $GITHUB_ENV
+        run: echo "VITE_BASE_URL=https://evalbackdevgit.azurewebsites.net/v1/employee" >> $GITHUB_ENV
       
       - name: Login to Azure
         uses: azure/login@v1
@@ -93,7 +93,7 @@ jobs:
         run: unzip release.zip
 
       - name: Set environment variables for Test
-        run: echo "VITE_BASE_URL=${{ secrets.VITE_BASE_URL_TEST }}" >> $GITHUB_ENV
+        run: echo "VITE_BASE_URL=https://evalbacktestgit.azurewebsites.net/v1/employee" >> $GITHUB_ENV
       
       - name: Login to Azure
         uses: azure/login@v1
@@ -129,7 +129,7 @@ jobs:
         run: unzip release.zip
 
       - name: Set environment variables for Prod
-        run: echo "VITE_BASE_URL=${{ secrets.VITE_BASE_URL_PROD }}" >> $GITHUB_ENV
+        run: echo "VITE_BASE_URL=https://evalbackprodgit.azurewebsites.net/v1/employee" >> $GITHUB_ENV
       
       - name: Login to Azure
         uses: azure/login@v1
