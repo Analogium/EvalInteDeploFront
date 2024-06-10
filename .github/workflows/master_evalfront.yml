@@ -63,7 +63,7 @@ jobs:
           tokenSuffix: ')--'
           files: '["**/*.js"]'
         env:
-          viteurl: https://evalbackdevgit.azurewebsites.net/v1/employee 
+          viteurl: https://evalbackdevgit.azurewebsites.net/v1/employee/ 
       
       - name: Login to Azure
         uses: azure/login@v1
@@ -105,7 +105,7 @@ jobs:
           tokenSuffix: ')--'
           files: '["**/*.js"]'
         env:
-          viteurl: https://evalbacktestgit.azurewebsites.net/v1/employee 
+          viteurl: https://evalbacktestgit.azurewebsites.net/v1/employee/ 
       
       - name: Login to Azure
         uses: azure/login@v1
@@ -147,7 +147,7 @@ jobs:
           tokenSuffix: ')--'
           files: '["**/*.js"]'
         env:
-          viteurl: https://evalbackprodgit.azurewebsites.net/v1/employee 
+          viteurl: https://evalbackprodgit.azurewebsites.net/v1/employee/ 
       
       - name: Login to Azure
         uses: azure/login@v1
